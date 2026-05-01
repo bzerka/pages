@@ -36,8 +36,8 @@
   </ul>
   <h3>2.2 Dados gerados no app</h3>
   <ul>
-    <li><strong>Dados no dispositivo:</strong> agenda, serviços, lembretes e notas ficam apenas no seu aparelho (armazenamento local) e não são enviados para nossos servidores.</li>
-    <li><strong>Cache offline:</strong> links úteis e dados de permuta podem ser armazenados temporariamente no dispositivo para permitir o uso sem conexão.</li>
+    <li><strong>Dados na nuvem:</strong> agenda, serviços, lembretes, notas e links úteis são sincronizados com a nuvem (Firebase/Google Cloud) vinculados à sua conta, para garantir acesso em múltiplos dispositivos e recuperação em caso de troca de aparelho.</li>
+    <li><strong>Cache offline:</strong> os dados acima também são armazenados temporariamente no dispositivo para permitir o uso sem conexão.</li>
   </ul>
   <h3>2.3 Permissões do dispositivo</h3>
   <ul>
@@ -46,18 +46,19 @@
 
   <hr>
   <h2>3. Como usamos os dados</h2>
-  <p>Para criar e manter sua conta, permitir login, exibir perfil e próximo serviço, troca de senha, e para melhorar o app com base em sugestões. Os dados de permuta são usados exclusivamente para conectar usuários que desejam trocar de posto. Não vendemos seus dados nem os usamos para publicidade dirigida.</p>
+  <p>Para criar e manter sua conta, permitir login, sincronizar agenda, serviços, lembretes e notas entre dispositivos, exibir perfil e próximo serviço, troca de senha, e para melhorar o app com base em sugestões. Os dados de permuta são usados exclusivamente para conectar usuários que desejam trocar de posto. Não vendemos seus dados nem os usamos para publicidade dirigida.</p>
 
   <hr>
   <h2>4. Onde os dados são armazenados</h2>
   <ul>
-    <li><strong>Na nuvem (Firebase/Google Cloud):</strong> e-mail, perfil, dados de sessão, links úteis e dados de permuta (quando cadastrados).</li>
-    <li><strong>No seu aparelho:</strong> agenda, serviços, lembretes, notas e cache offline de links úteis.</li>
+    <li><strong>Na nuvem (Firebase/Google Cloud):</strong> e-mail, perfil, dados de sessão, agenda, serviços, lembretes, notas, links úteis e dados de permuta (quando cadastrados).</li>
+    <li><strong>No seu aparelho:</strong> cache offline de todos os dados acima para uso sem conexão.</li>
   </ul>
 
   <hr>
   <h2>5. Compartilhamento de dados entre usuários</h2>
   <p>Ao se cadastrar na funcionalidade de <strong>Permuta</strong>, as informações fornecidas (UF, origem, destinos, graduação, condição e telefone) ficam visíveis para outros usuários autenticados do app. Você pode remover seu cadastro a qualquer momento diretamente pelo app, o que também remove seus dados da listagem.</p>
+  <p>Os demais dados (agenda, serviços, lembretes, notas e links úteis) são <strong>privados</strong> e acessíveis apenas por você.</p>
   <p>O app pode abrir links externos (como WhatsApp e URLs adicionadas em Links Úteis). O Escala Pro não se responsabiliza pelo conteúdo de serviços de terceiros acessados por esses links.</p>
 
   <hr>
@@ -70,7 +71,7 @@
 
   <hr>
   <h2>8. Retenção dos dados</h2>
-  <p>Mantemos os dados da conta enquanto ela existir. Ao solicitar exclusão, removemos conforme a lei. Dados de permuta são removidos imediatamente ao excluir o cadastro. Ao desinstalar o app, os dados locais são removidos pelo dispositivo.</p>
+  <p>Mantemos os dados da conta enquanto ela existir. Ao solicitar exclusão, removemos conforme a lei. Dados de permuta são removidos imediatamente ao excluir o cadastro. Ao desinstalar o app, o cache local é removido pelo dispositivo, mas os dados na nuvem são mantidos até a exclusão da conta.</p>
 
   <hr>
   <h2>9. Segurança</h2>
