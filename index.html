@@ -13,79 +13,130 @@
     p, li { margin-bottom: 0.5rem; }
     ul { margin: 0.35rem 0; padding-left: 1.25rem; }
     hr { border: none; border-top: 1px solid #eee; margin: 1.25rem 0; }
+    a { color: #2563eb; }
     .footer { margin-top: 2rem; font-size: 0.9rem; color: #666; font-style: italic; text-align: center; }
   </style>
 </head>
 <body>
   <h1>Política de Privacidade — Escala Pro</h1>
-  <p class="updated"><strong>Última atualização:</strong> maio de 2025</p>
-  <p>O aplicativo é oferecido para ajudá-lo a organizar plantões, serviços e lembretes. Esta política descreve como tratamos suas informações quando você usa o app.</p>
+  <p class="updated"><strong>Última atualização:</strong> novembro de 2026</p>
+  <p>O Escala Pro ajuda você a organizar sua escala de trabalho, seus serviços, lembretes e finanças. Esta política explica quais dados o app coleta, para que eles são usados, com quem são compartilhados e como você pode pedir acesso ou exclusão.</p>
 
   <hr>
   <h2>1. Quem é o responsável pelos dados</h2>
-  <p>O responsável pelo tratamento dos dados pessoais coletados pelo app é o desenvolvedor do aplicativo. Para dúvidas ou solicitações, utilize "Envie sua sugestão" na aba Conta ou o e-mail associado ao seu cadastro.</p>
+  <p>O responsável pelo tratamento dos dados pessoais coletados pelo app é o desenvolvedor do Escala Pro. Para dúvidas ou solicitações, escreva para <a href="mailto:suporte@escalapro.net.br">suporte@escalapro.net.br</a>.</p>
+  <p>O Escala Pro é um aplicativo independente. <strong>Não é um aplicativo oficial e não tem vínculo com o governo</strong> nem com nenhum órgão público.</p>
 
   <hr>
   <h2>2. Quais dados coletamos</h2>
-  <h3>2.1 Dados fornecidos por você</h3>
+
+  <h3>2.1 Conta e login</h3>
   <ul>
-    <li><strong>Cadastro:</strong> e-mail, senha (armazenada de forma segura) e nome.</li>
-    <li><strong>Sugestões:</strong> ao enviar uma sugestão pelo app, armazenamos o texto da mensagem, seu e-mail e um identificador de usuário.</li>
-    <li><strong>Permuta (opcional):</strong> ao se cadastrar na funcionalidade de permuta, coletamos estado (UF), unidade de origem, destinos de interesse, graduação, condição e número de telefone/WhatsApp. Esses dados são armazenados na nuvem e ficam visíveis para outros usuários autenticados do app com o objetivo de facilitar a troca de postos de trabalho.</li>
-    <li><strong>Links úteis (opcional):</strong> links personalizados adicionados por você são armazenados na nuvem vinculados à sua conta.</li>
+    <li><strong>Cadastro com e-mail:</strong> e-mail, senha (guardada de forma criptografada pelo Firebase Authentication; nós não temos acesso a ela) e nome.</li>
+    <li><strong>Entrar com Google ou com a Apple:</strong> recebemos do Google ou da Apple o seu nome e e-mail e um identificador da conta. Na Apple, você pode escolher ocultar o seu e-mail; nesse caso recebemos um endereço de encaminhamento criado pela Apple.</li>
+    <li><strong>Perfil:</strong> nome de guerra, graduação, unidade, estado (UF) e, se você quiser, uma foto de perfil.</li>
   </ul>
-  <h3>2.2 Dados gerados no app</h3>
+
+  <h3>2.2 Dados que você registra no app</h3>
   <ul>
-    <li><strong>Dados na nuvem:</strong> agenda, serviços, lembretes, notas e links úteis são sincronizados com a nuvem (Firebase/Google Cloud) vinculados à sua conta, para garantir acesso em múltiplos dispositivos e recuperação em caso de troca de aparelho.</li>
-    <li><strong>Cache offline:</strong> os dados acima também são armazenados temporariamente no dispositivo para permitir o uso sem conexão.</li>
+    <li><strong>Agenda e serviços:</strong> compromissos, categorias de serviço, horários, locais, valores, se você é titular ou reserva, férias e afastamentos.</li>
+    <li><strong>Lembretes, notas e links úteis.</strong></li>
+    <li><strong>Ocorrências do serviço:</strong> texto, fotos e documentos (PDF, Word, Excel e outros) que você anexar.</li>
+    <li><strong>Controle financeiro:</strong> salário, ganhos, gastos, categorias e cofrinhos que você registrar.</li>
+    <li><strong>Tempo de serviço:</strong> data de ingresso e demais informações que você informar para o cálculo de reserva e promoção.</li>
+    <li><strong>Pagamento dos convênios:</strong> a lista de convênios que você escolheu acompanhar.</li>
+    <li><strong>Mensagens:</strong> textos e imagens que você envia no chat para outros usuários.</li>
+    <li><strong>Permuta (opcional):</strong> estado (UF), unidade de origem, destinos de interesse, graduação, nome de guerra e condição.</li>
+    <li><strong>Sugestões:</strong> o texto que você envia, seu e-mail e o identificador da sua conta.</li>
   </ul>
-  <h3>2.3 Permissões do dispositivo</h3>
+
+  <h3>2.3 Dados coletados automaticamente</h3>
   <ul>
-    <li><strong>Notificações:</strong> usadas apenas para lembretes locais dos seus plantões. Não enviamos notificações promocionais nem compartilhamos dados com terceiros para marketing.</li>
+    <li><strong>Uso do app:</strong> telas abertas e ações realizadas, versão do app e do sistema e modelo do aparelho, pelo Firebase Analytics, vinculados ao identificador da sua conta. Usamos isso para entender quais recursos são usados e corrigir problemas.</li>
+    <li><strong>Anúncios:</strong> quem não assina o Premium vê anúncios do Google AdMob. O AdMob coleta identificadores do aparelho e dados de interação com os anúncios para exibir e medir anúncios, que podem ser personalizados. No iPhone, o app não pede permissão de rastreamento, então o identificador de publicidade da Apple (IDFA) não é usado.</li>
+    <li><strong>Notificações:</strong> um código do aparelho para enviar notificações (token de push).</li>
+    <li><strong>Assinatura:</strong> o status da sua assinatura e o histórico de compras, informados pela App Store ou Google Play através do RevenueCat. Não recebemos os dados do seu cartão.</li>
   </ul>
+
+  <h3>2.4 Permissões do aparelho</h3>
+  <ul>
+    <li><strong>Notificações:</strong> lembretes dos seus serviços, aviso de mensagens novas no chat e aviso de mudança no pagamento dos convênios que você acompanha.</li>
+    <li><strong>Câmera e fotos:</strong> só quando você escolhe tirar ou enviar uma foto (perfil, chat ou ocorrência).</li>
+    <li><strong>Arquivos:</strong> só quando você escolhe anexar um documento a uma ocorrência.</li>
+    <li><strong>Microfone e reconhecimento de fala:</strong> só quando você usa o ditado nas ocorrências. A fala é convertida em texto pelo reconhecimento de fala do próprio sistema; o app não grava nem guarda o áudio.</li>
+  </ul>
+  <p>O app não usa a sua localização.</p>
 
   <hr>
   <h2>3. Como usamos os dados</h2>
-  <p>Para criar e manter sua conta, permitir login, sincronizar agenda, serviços, lembretes e notas entre dispositivos, exibir perfil e próximo serviço, troca de senha, e para melhorar o app com base em sugestões. Os dados de permuta são usados exclusivamente para conectar usuários que desejam trocar de posto. Não vendemos seus dados nem os usamos para publicidade dirigida.</p>
-
-  <hr>
-  <h2>4. Onde os dados são armazenados</h2>
   <ul>
-    <li><strong>Na nuvem (Firebase/Google Cloud):</strong> e-mail, perfil, dados de sessão, agenda, serviços, lembretes, notas, links úteis e dados de permuta (quando cadastrados).</li>
-    <li><strong>No seu aparelho:</strong> cache offline de todos os dados acima para uso sem conexão.</li>
+    <li>Criar e manter sua conta e permitir o login (com e-mail, Google ou Apple).</li>
+    <li>Guardar e sincronizar seus dados entre aparelhos e recuperá-los se você trocar de celular.</li>
+    <li>Mostrar sua agenda, resumo do mês, controle financeiro e widgets.</li>
+    <li>Enviar as notificações que você ativou.</li>
+    <li>Permitir o chat, a permuta e o recurso "No mesmo serviço" entre usuários.</li>
+    <li>Liberar os recursos do Premium para quem assina.</li>
+    <li>Exibir anúncios para quem não assina.</li>
+    <li>Entender o uso do app, corrigir erros e melhorar recursos.</li>
   </ul>
+  <p><strong>Não vendemos seus dados pessoais.</strong></p>
 
   <hr>
-  <h2>5. Compartilhamento de dados entre usuários</h2>
-  <p>Ao se cadastrar na funcionalidade de <strong>Permuta</strong>, as informações fornecidas (UF, origem, destinos, graduação, condição e telefone) ficam visíveis para outros usuários autenticados do app. Você pode remover seu cadastro a qualquer momento diretamente pelo app, o que também remove seus dados da listagem.</p>
-  <p>Os demais dados (agenda, serviços, lembretes, notas e links úteis) são <strong>privados</strong> e acessíveis apenas por você.</p>
-  <p>O app pode abrir links externos (como WhatsApp e URLs adicionadas em Links Úteis). O Escala Pro não se responsabiliza pelo conteúdo de serviços de terceiros acessados por esses links.</p>
+  <h2>4. O que outros usuários podem ver</h2>
+  <ul>
+    <li><strong>Perfil:</strong> se a opção de perfil visível estiver ligada (Mais &gt; Preferências), outros usuários podem encontrar você nas Mensagens e ver seu nome de guerra, graduação, unidade e foto.</li>
+    <li><strong>No mesmo serviço:</strong> com o perfil visível, usuários que têm serviço no mesmo local, dia e horário que você podem ver que vocês estão no mesmo serviço. Desligando o perfil visível, você deixa de aparecer.</li>
+    <li><strong>Mensagens:</strong> o que você envia no chat fica visível para a pessoa com quem você conversa.</li>
+    <li><strong>Permuta:</strong> as informações do seu anúncio de permuta ficam visíveis para outros usuários do mesmo estado. Você pode excluir o anúncio a qualquer momento.</li>
+  </ul>
+  <p>Os demais dados (agenda, valores, lembretes, notas, ocorrências, controle financeiro e tempo de serviço) são privados e acessíveis apenas por você.</p>
 
   <hr>
-  <h2>6. Compartilhamento com terceiros</h2>
-  <p>Apenas com provedores necessários ao funcionamento do app (sob obrigações de confidencialidade) ou quando exigido por lei. Não compartilhamos dados para marketing ou publicidade.</p>
+  <h2>5. Pagamento dos convênios</h2>
+  <p>As informações de pagamento dos convênios vêm da planilha pública de pagamentos divulgada pela DGPROG. O Escala Pro apenas reproduz esses dados públicos para facilitar a consulta; não é a fonte oficial e não garante que estejam completos ou atualizados. Em caso de dúvida, consulte o órgão responsável.</p>
+
+  <hr>
+  <h2>6. Empresas que tratam dados para o app</h2>
+  <p>Compartilhamos dados apenas com os fornecedores necessários ao funcionamento do app, cada um com sua própria política de privacidade:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (Authentication, Firestore, Storage, Cloud Functions, Cloud Messaging e Analytics): login, armazenamento dos dados, envio de notificações e estatísticas de uso.</li>
+    <li><strong>Google AdMob:</strong> anúncios para quem não assina.</li>
+    <li><strong>RevenueCat:</strong> controle da assinatura Premium.</li>
+    <li><strong>Apple e Google:</strong> login (quando você escolhe Entrar com Apple ou Google), compras e notificações.</li>
+  </ul>
+  <p>Os dados podem ser processados em servidores fora do Brasil, conforme as garantias da LGPD. Também podemos compartilhar dados quando exigido por lei ou ordem judicial.</p>
 
   <hr>
   <h2>7. Seus direitos (LGPD)</h2>
-  <p>Você pode confirmar e acessar seus dados, corrigir informações, solicitar exclusão ou revogar consentimento. Use "Envie sua sugestão" no app ou entre em contato pelo e-mail do cadastro. Para remover dados de permuta, utilize a opção "Excluir cadastro" diretamente na tela de Permuta.</p>
+  <p>Você pode confirmar se tratamos seus dados, acessá-los, corrigi-los, pedir a exclusão, pedir a portabilidade e revogar consentimentos. A maior parte pode ser feita direto no app (editar perfil, apagar registros, desligar o perfil visível). Para o restante, escreva para <a href="mailto:suporte@escalapro.net.br">suporte@escalapro.net.br</a>.</p>
 
   <hr>
-  <h2>8. Retenção dos dados</h2>
-  <p>Mantemos os dados da conta enquanto ela existir. Ao solicitar exclusão, removemos conforme a lei. Dados de permuta são removidos imediatamente ao excluir o cadastro. Ao desinstalar o app, o cache local é removido pelo dispositivo, mas os dados na nuvem são mantidos até a exclusão da conta.</p>
+  <h2>8. Exclusão da conta</h2>
+  <p>Você pode excluir sua conta a qualquer momento dentro do app, em <strong>Mais &gt; Conta e segurança &gt; Excluir conta</strong>. A exclusão apaga sua conta e os dados ligados a ela. Se você entrava com a Apple, o acesso do app à sua conta Apple também é revogado.</p>
+  <p>Se não conseguir acessar o app, peça a exclusão pelo e-mail <a href="mailto:suporte@escalapro.net.br">suporte@escalapro.net.br</a>, informando o e-mail da conta.</p>
+  <p>A assinatura é cobrada pela App Store ou Google Play: excluir a conta não cancela a cobrança. Cancele a assinatura nas configurações da loja.</p>
 
   <hr>
-  <h2>9. Segurança</h2>
-  <p>Adotamos medidas técnicas e organizacionais para proteger seus dados. Nenhum método é 100% seguro; buscamos reduzir riscos ao máximo.</p>
+  <h2>9. Retenção dos dados</h2>
+  <p>Mantemos os dados enquanto sua conta existir. Ao excluir a conta, os dados são apagados, exceto o que precisarmos guardar por obrigação legal. Mensagens que você enviou podem continuar visíveis para quem as recebeu. Ao desinstalar o app, os dados guardados no aparelho são apagados, mas os dados na nuvem continuam até a exclusão da conta.</p>
 
   <hr>
-  <h2>10. Alterações nesta política</h2>
-  <p>Podemos atualizar esta política. A data no topo indica a versão mais recente. O uso continuado do app após mudanças constitui aceitação da versão atualizada.</p>
+  <h2>10. Segurança</h2>
+  <p>Os dados trafegam de forma criptografada e o acesso a eles é protegido por regras que permitem a cada usuário ler e alterar apenas o que é dele. Nenhum método é 100% seguro; buscamos reduzir os riscos ao máximo.</p>
 
   <hr>
-  <h2>11. Contato</h2>
-  <p>Dúvidas ou pedidos de acesso, correção ou exclusão: use "Envie sua sugestão" na aba Conta ou o e-mail associado à sua conta.</p>
+  <h2>11. Menores de idade</h2>
+  <p>O Escala Pro é destinado a maiores de 18 anos. Não coletamos intencionalmente dados de menores.</p>
 
   <hr>
-  <p class="footer">Escala Pro — Organize seus plantões, serviços e lembretes em um só lugar.</p>
+  <h2>12. Alterações nesta política</h2>
+  <p>Podemos atualizar esta política quando o app mudar. A data no topo indica a versão mais recente. Mudanças importantes serão avisadas no app.</p>
+
+  <hr>
+  <h2>13. Contato</h2>
+  <p>Dúvidas ou pedidos sobre seus dados: <a href="mailto:suporte@escalapro.net.br">suporte@escalapro.net.br</a> ou "Envie sua sugestão", na aba Mais do app.</p>
+
+  <hr>
+  <p class="footer">Escala Pro — Organize sua escala, serviços e lembretes em um só lugar.</p>
 </body>
 </html>
